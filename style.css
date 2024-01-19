@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
+
+
+
+body {
+    /* width: 100vw; */
+    /* height: 100vh; */
+    margin: 0;
+    padding: 0;
+    /* background: #1a2b45; */
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .heading {
+    width: 100%;
+    /* border: 1px soldi red; */
+    height: 6vw;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    color: #fafafa;
+    font-size: 1.5rem;
+  }
+  
+  .banner {
+    width: 100%;
+    height: 50vw;
+    display: flex;
+    border-bottom: 5px solid #d40d7f;
+  }
+  .banner img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+  }
+  .banner h1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #d40d7f;
+  }
+
+  .lot_heading {
+    width: 100%;
+    display: flex;
+    margin: 3vw 0;
+    position: relative;
+  }
+  .lot_heading img {
+    width: 100%;
+  }
+  .lot_heading h2 {
+    color: #d40d7f;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    /* position: fixed; */
+    background-color: yellow;
+  }
+  nav ul {
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 1vw;
+  }
+  nav ul li {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    margin: 0 1vw;
+  }
+
+
+  .results {
+    padding: 0 5vw;
+    margin: 5vw 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .results .card {
+    width: 30%;
+    height: 11.8vw;
+    border-radius: 7px;
+    background-image: url(./img/ticket.png);
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+  }
+  .results .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+  }
+
+  .results .card .left {
+    width: 76%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #d40d7f;
+  }
+  .results .card .left h2 {
+    font-size: 3rem;
+  }
+  .results .card .left p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  .results .card .right {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #d40d7f;
+  }
+  .results .card .right h3 {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  .results .card .right h3 span {
+    font-size: 1rem;
+  }
+  .results .card .right p {
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin: -3px 0;
+  }
+
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    padding: 5vw;
+    padding-bottom: 0;
+    /* background-image: url(./img/bg_trans.png); */
+    background-size: cover;
+  }
+  .details .boxed {
+    display: flex;
+    justify-content: space-between;
+  }
+  .details .boxed img {
+    width: 30%;
+  }
+  .details .desc {
+    margin: 7vw 0 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .details .desc h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #d40d7f;
+  }
+  .details .desc p {
+    font-size: 0.95rem;
+    /* font-family: 'Poppins', sans-serif; */
+  }
+
+  .desc form {
+    /* border: 1px solid red; */
+    padding: 1rem 0;
+    display: flex;
+    align-items: flex-end;
+  }
+  .desc form .box {
+    /* border: 1px solid magenta; */
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .desc form .box label {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #d40d7f;
+  }
+  .desc form .box select {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    border: 3px solid #ffafdc;
+  }
+  .desc form .box select:focus {
+    outline: none;
+    border: 3px solid #d40d7f;
+  }
+  .desc form button {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    background-color: #d40d7f;
+    border: 3px solid #d40d7f;
+    color: #fff;
+  }
+  .desc form button:hover {
+    background-color: #bb0c6f;
+    border: 3px solid #bb0c6f;
+  }
+
+
+
+
+
+  section.data {
+    /* border: 1px solid red; */
+    padding: 0 5vw;
+  }
+  .rainbow-btn {
+    margin: 2vw auto;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    display: block;
+    z-index: 2;
+    overflow: hidden;
+    padding: 5px;
+    cursor: pointer;
+    /* height: 100px;  */
+}
+.rainbow-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    background-size: 50% 100%;
+    animation: rainbow-btn 1s linear infinite;
+}
+.rainbow-btn span {
+    position: relative;
+    z-index: 2;
+    padding: .7rem 0;
+    font-size: 1.1rem;
+    text-decoration: none;
+    align-items: center;
+    background: #000;
+    /* color: #000000; */
+    border-radius: 3px;
+    display: block;
+    justify-content: center;
+    box-sizing: border-box;
+    /* height: 100%; */
+    /* font-size: 50px; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.rainbow-btn:focus:before,
+.rainbow-btn:hover:before {
+    animation: rainbow-btn .75s linear infinite;
+}
+
+@keyframes rainbow-btn {
+    to {
+        transform: translateX(-50%)
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .banner h1 {
+    text-align: center;
+    width: 90%;
+    font-size: 1.8rem;
+  }
+  
+
+  .results {
+    padding: 0 2vw;
+    margin: 5vw 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .lot_heading {
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  .lot_heading img {
+    width: 150%;
+    justify-content: center;
+  }
+  .lot_heading h2 {
+    font-size: 0.7rem;
+    transform: translate(-50%, 0.5vh);
+  }
+  .lot_heading h2 span {
+    font-size: 0.75rem;
+  }
+  .results .card {
+    width: 95%;
+    height: 40vw;
+    margin: 4vw 0;
+  }
+
+  .details .boxed {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .details .boxed img {
+    width: 45%;
+    margin: 0.5rem;
+  }
+
+
+  .box_top h1 {
+    font-size: 20px !important;
+    -webkit-text-stroke: 1px !important;
+    -webkit-text-stroke-color: #000 !important;
+  }
+  .box_one h1 {
+    font-size: 30px !important;
+    -webkit-text-stroke: 2px !important;
+    -webkit-text-stroke-color: #fff !important;
+  }
+  .box_two, .box_three, .box_four {
+    font-size: 8px !important;
+  }
+  .box_five {
+    font-size: 4.9px !important;
+  }
+
+
+  .details .desc {
+    margin: 15vw 0 3vw;
+  }
+  .details .desc h3 {
+    font-size: 1.5rem;
+  }
+  .desc form {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .desc form .box {
+    margin-right: 0;
+  }
+  .details .desc form .box:first-child {
+    margin-right: 1.2rem;
+  }
+  .desc form button {
+    margin-top: 1.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* #printBox.result_box {
+    border: 1px solid magenta;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  /* #printBox.result_box .container {
+    border: 1px solid blue;
+    width: 95%;
+    margin: 2vw 0;
+    height: 119vw;
+    background-image: url(./img/Lottery-result.jpg);
+    background-size: 100%;
+  } */
+
+  /* @media print {
+    body * {
+      display: none;
+    }
+    #printBox.result_box, #printBox.result_box *  {
+      display: flex;
+    }
+  } */
+
+
+
+
+
+
+
